@@ -12,7 +12,7 @@ body {
 .quiz-container {
   width: 80%;
   max-width: 600px;
-  margin: 50px auto;
+  margin: 15% auto;
   padding: 20px;
   background-color: #fff; /* White background for the quiz container */
   border-radius: 8px;
@@ -35,21 +35,44 @@ h1 {
 }
 
 button {
+  width: 580px; /* Fixed width */
+  height: 62px; /* Fixed height */
+  font-family: "Press Start 2P", cursive; /* Apply pixel-style font */
   padding: 15px 30px;
   margin: 10px;
-  font-size: 18px;
+  font-size: 14px; /* Adjust size for readability */
   background-color: #800080; /* Purple background */
   color: white;
-  border: 2px solid #ff69b4; /* Pink border around button */
+  border: 2px solid #ff69b4; /* Pink border */
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 button:hover {
   background-color: #ff69b4; /* Pink hover effect */
   border-color: #800080; /* Purple border on hover */
-  transform: scale(1.1); /* Slight scale effect when hovering */
+  transform: scale(1.05); /* Slight scale effect when hovering */
+}
+
+#startOverBtn {
+  display: none; /* Hidden at the start */
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #800080; /* Purple */
+  color: white;
+  border: 2px solid #ff69b4; /* Pink border */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+#startOverBtn:hover {
+  background-color: #ff69b4;
+  border-color: #800080;
+  transform: scale(1.1);
 }
 
 /* Result display styling */
