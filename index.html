@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Container for the quiz -->
+    <div class="quiz-container">
+        <h1>Valentine's Day Fun Quiz</h1>
+
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <p>1. What’s your idea of a perfect Valentine’s Day date?</p>
+                <button type="button" onclick="nextQuestion(1)">Dinner at a romantic restaurant followed by stargazing</button>
+                <button type="button" onclick="nextQuestion(1)">A fun activity like bowling or karaoke with quirky surprises</button>
+                <button type="button" onclick="nextQuestion(1)">A cozy movie marathon with chocolate and blankets</button>
+                <button type="button" onclick="nextQuestion(1)">A picnic in the park (weather permitting) with homemade treats</button>
+            </div>
+
+            <div class="question" id="question2">
+                <p>2. If I were to surprise you with flowers, which one would make you smile the most?</p>
+                <button type="button" onclick="nextQuestion(2)">Classic red roses</button>
+                <button type="button" onclick="nextQuestion(2)">A quirky bouquet of wildflowers</button>
+                <button type="button" onclick="nextQuestion(2)">Sunflowers</button>
+                <button type="button" onclick="nextQuestion(2)">A mix of tulips and daisies</button>
+            </div>
+
+            <div class="question" id="question3">
+                <p>3. If I were to pick you up for our date, what’s the best time to show up and surprise you?</p>
+                <button type="button" onclick="nextQuestion(3)">A little early to give you time to relax before the fun starts</button>
+                <button type="button" onclick="nextQuestion(3)">Just on time – no need to rush, let's keep it cool</button>
+                <button type="button" onclick="nextQuestion(3)">Fashionably late – because who doesn’t like a bit of mystery?</button>
+                <button type="button" onclick="nextQuestion(3)">Whenever – I’ll be ready to go whenever you get here!</button>
+            </div>
+
+            <div class="question" id="question4">
+                <p>4. What would be a fun and unexpected thing to do on a Valentine’s date?</p>
+                <button type="button" onclick="nextQuestion(4)">Go to an amusement park</button>
+                <button type="button" onclick="nextQuestion(4)">Try something new, like a cooking class</button>
+                <button type="button" onclick="nextQuestion(4)">Go roller skating or ice skating</button>
+                <button type="button" onclick="nextQuestion(4)">Take a silly photo shoot together</button>
+            </div>
+
+            <div id="result" class="result"></div>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
