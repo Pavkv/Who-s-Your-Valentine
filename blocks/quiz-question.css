@@ -1,0 +1,18 @@
+.quiz-question__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.quiz-question__text {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal;
+    color: #800080;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}

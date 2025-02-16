@@ -1,83 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valentine's Day Quiz</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <!-- Container for the quiz -->
-    <div class="quiz-container">
-      <h1>Valentine's Day Fun Quiz</h1>
-
-      <form id="quizForm">
-        <div class="question" id="question1">
-          <p>1. What’s your idea of a perfect Valentine’s Day date?</p>
-          <button type="button">
-            Dinner at a romantic restaurant followed by stargazing
-          </button>
-          <button type="button">
-            A fun activity like bowling or karaoke with quirky surprises
-          </button>
-          <button type="button">
-            A cozy movie marathon with chocolate and blankets
-          </button>
-          <button type="button">
-            A picnic in the park (weather permitting) with homemade treats
-          </button>
-        </div>
-
-        <div class="question" id="question2">
-          <p>
-            2. If I were to surprise you with flowers, which one would make you
-            smile the most?
-          </p>
-          <button type="button">Classic red roses</button>
-          <button type="button">A quirky bouquet of wildflowers</button>
-          <button type="button">Sunflowers</button>
-          <button type="button">A mix of tulips and daisies</button>
-        </div>
-
-        <div class="question" id="question3">
-          <p>
-            3. If I were to pick you up for our date, what’s the best time to
-            show up and surprise you?
-          </p>
-          <button type="button">
-            A little early to give you time to relax before the fun starts
-          </button>
-          <button type="button">
-            Just on time – no need to rush, let's keep it cool
-          </button>
-          <button type="button">
-            Fashionably late – because who doesn’t like a bit of mystery?
-          </button>
-          <button type="button">
-            Whenever – I’ll be ready to go whenever you get here!
-          </button>
-        </div>
-
-        <div class="question" id="question4">
-          <p>
-            4. What would be a fun and unexpected thing to do on a Valentine’s
-            date?
-          </p>
-          <button type="button">Go to an amusement park</button>
-          <button type="button">Try something new, like a cooking class</button>
-          <button type="button">Go roller skating or ice skating</button>
-          <button type="button">Take a silly photo shoot together</button>
-        </div>
-
-        <div id="result" class="result"></div>
-        <button id="startOverBtn">Start Over</button>
-      </form>
+    <div class="page">
+      <main class="quiz">
+        <h1 class="quiz__header">Valentine's Day Fun Quiz</h1>
+        <form class="quiz__form">
+          <template id="quiz-question-template">
+            <div class="quiz-question__container" id="">
+              <h2 class="quiz-question__text"></h2>
+              <div class="quiz-answer__list">
+                <template id="quiz-answer-template">
+                  <button type="button" class="quiz-question__answer"></button>
+                </template>
+              </div>
+            </div>
+          </template>
+          <p class="quiz__form-result"></p>
+          <button type="submit" class="quiz__form-restart-btn">Start Over</button>
+        </form>
+      </main>
     </div>
-
-    <script src="script.js"></script>
+    <script type="module" src="scripts/index.js"></script>
   </body>
 </html>
